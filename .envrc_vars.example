@@ -1,0 +1,9 @@
+
+## Postgres connection
+export POSTGRES_USER=
+export POSTGRES_PASSWORD=
+
+## PgAdmin
+export PGADMIN_DEFAULT_EMAIL=
+export PGADMIN_DEFAULT_PASSWORD=
+export PGADMIN_PORT=
