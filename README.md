@@ -10,6 +10,22 @@
 * Go inside of directory,  `cd compose-postgres`
 * Run this command `docker-compose up -d`
 
+### Set Environment variablse with direnv
+
+Install [direnv](https://direnv.net/) to set up personalize workspace environment variables.
+
+* Run `cp .envrc_vars.example .envrc_vars`
+* Set your own variable values
+* Run `direnv allow`
+
+Expected output
+```bash
+$ direnv allow              
+direnv: loading .envrc    
+direnv: export +PGADMIN_DEFAULT_EMAIL +PGADMIN_DEFAULT_PASSWORD +POSTGRES_PASSWORD +POSTGRES_USER
+```
+
+Each time you modify .envrc_vars run `direnv reload`
 
 ## Environments
 This Compose file contains the following environment variables:
